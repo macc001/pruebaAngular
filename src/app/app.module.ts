@@ -1,12 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/header/header.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { PortafolioComponent } from './pages/portafolio/portafolio.component';
-import { AboutComponent } from './pages/about/about.component';
-import { ItemComponent } from './pages/item/item.component';
+import { appRouting } from "./app.routes";
+
+import { AppComponent } from "./app.component";
+import { HeaderComponent } from "./shared/header/header.component";
+import { FooterComponent } from "./shared/footer/footer.component";
+import { PortafolioComponent } from "./pages/portafolio/portafolio.component";
+import { AboutComponent } from "./pages/about/about.component";
+import { ItemComponent } from "./pages/item/item.component";
 
 @NgModule({
   declarations: [
@@ -17,10 +19,8 @@ import { ItemComponent } from './pages/item/item.component';
     AboutComponent,
     ItemComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, appRouting],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
