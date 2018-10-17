@@ -9,4 +9,8 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  buscarProd(buscar: string) {
+    console.log(buscar);
+  }
 }
